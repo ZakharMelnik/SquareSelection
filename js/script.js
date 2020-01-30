@@ -14,22 +14,36 @@ $(document).ready(function() {
 
 	$('.banners').owlCarousel({
 	    loop:false,
-	    items:3,
+	    items:1,
 	    margin:15,
+	    dots: false,
 	    stagePadding: 25,
 	    responsiveClass:true,
 	    responsive:{
-	    		0:{
-	    		    items:1
+	    		580:{
+	    		    items:2,
+	    		    stagePadding: 25,
 	    		},
-	            992:{
-	                items:2
+	            768:{
+	                items:2,
+	                stagePadding: 25,
 	            },
-	            1200:{
-	                items:3
+	            992:{
+	                items:3,
+	                stagePadding: 0,
 	            }
 	        }
 	})
+
+	$(".js-range-slider").ionRangeSlider({
+			skin: "round",
+	        min: 0,
+	        max: 400000,
+	        from: 200,
+	        to: 500,
+	        grid: true,
+	        from_max: 300000
+	    });
 
 });
 
@@ -45,4 +59,11 @@ $(function () {
 		$.magnificPopup.close();
 	});
 });
+
+function copy() {
+  $('input.copy').select();
+  document.execCommand("copy");
+}
+
+
 

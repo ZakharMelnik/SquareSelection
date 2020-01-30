@@ -23,7 +23,8 @@
 		right: 0;
 		z-index: 99;
 		background: rgba(255,255,255,.9);
-		padding: 20px 60px;
+		padding: 0 60px;
+		height: 70px;
 	}
 
 	.grid {
@@ -43,6 +44,10 @@
 	.news.grid {
 	    grid-template-columns: repeat(3, 1fr);
 	    grid-gap: 20px;
+	}
+
+	.header {
+		padding: 0 25px;
 	}
 }
 
@@ -68,8 +73,9 @@
 	    background: rgba(255,255,255,.9);
 	    left: 0;
 	    right: 0;
-	    padding: 12px 10px 8px;
+	    padding: 0 15px;
 	    border-bottom: 1px solid #E9E9E9;
+	    height: 50px;
 	}
 	.header .profile .name {
 		font-size: 12px;
